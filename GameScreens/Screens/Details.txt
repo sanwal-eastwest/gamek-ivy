@@ -1,0 +1,32 @@
+General Notes:
+	- The priority here is to have a functional mobile app, I would like the screens to adapt properly to cell phone screen sizes. 
+	- If it is easier, we can make the app run exclusively in landscape mode 
+	- My style choice at the moment is simply black, but if you have some suggestions, I will gladly listen. Otherwise, I will likely call you again later when I have a better definition.
+
+1) Start Screen: 
+	Not much to say here, just a couple of buttons and a placeholder for a picture. 
+	the continue game would load data from a text file, if you can add that is a plus, but is not priority
+
+2) help screns: 
+	I would like to have a "help system" that behaves this way: 
+	- You can access it from StartScreen, MainScreen, Main2_screen and LocationScreen. 
+   	- I need 4 help screens with dummy content. I need them to have a "previous" "next" button,  and a "back" button. The previos/next navigates between help screens, and the 
+   		"back" button, returns to whatever screen was active before going to the help menu. 
+   		EG: I access help screen from the startScreen, I land on "game concepts" I navigate through the help, then I press "back", and I go back to StartScreen. 
+  			If I access the help screens from "LocationScreen", when I press "back" I should go to "LocationScreen"
+
+3) Main1 and Main2 Screens: 
+	In my current version this is the same screen, with differently generated tables, 
+	My code has a class called Queen, each Queen has a {} called stats and a [] called genes. 
+	One table shows stats{} and the other genes[]. 
+   	Each row represents the values of 1 Queen. 
+	You can switch from one another with a button "see genes", which should change text to "see stats". 
+   	By clicking on the header, you sort every Queen from the list[] called successors by the value of that stat/gene. 
+   	The first line of the table contains the values for the current Queen, and should not be affected by sorting. 
+   	All other values should apply a basic color code: 
+		if the value of this stat/gene  is higher than that of the current Queen, the value should be GREEN, 
+   		if it is smaller, RED otherwise, WHITE.
+
+4) LocationScreen: I would like a simple title, and up to 4 clickable pictures that are wide as the screen.
+
+5) ResultScreen: Very simple, just some text and a button that re-directs you to mainScreen
